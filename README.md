@@ -13,6 +13,8 @@ Secondly, DAX table was created and various dax measures added.
 
 ## Questions and Findings
 1. What is the average stock quantity available per product category?
+   the average stock quantity was measured using
+   Avg Stock Quantity = AVERAGE('Grocery_Inventory new v1'[Stock_Quantity])
 <img width="875" height="485" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/b9e6e1d9-08af-4f49-acbb-c556b24d5773" />
 
 3. Which suppliers contribute the most to total product inventory?
