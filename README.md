@@ -2,7 +2,7 @@
 
 ## Table of Content
 - [Introduction](#introduction)
-- [Project Objectives](#projects-objectives)
+- [Project Objectives](#project-objectives)
 - [Description of Dataset](#description-of-dataset)
 - [Tools](#tools)
 - [Data Cleaning](#data-cleaning)
@@ -18,27 +18,46 @@ This project described and evaluated the inventory of a grocery store.
 ## Project Objectives
 This project is intended to provide insights into the inventory of a grocery store, as a means to influence future decision-making.
 
-## Description
- It was sourced from Kaggle.com. It comprises of 17 fields (columns) and 572 obeservations (rows). It consisted of 5 unanswered questions meant to give data insights for future decision making.
+## Description of Dataset
+The dataset was sourced from Kaggle.com. It comprises of 17 fields (columns) and 572 obeservations (rows). It consisted of 5 unanswered questions meant to give data insights for future decision making.
+
+##Tools
+This project was carried out using PowerBi as the analytic tool.
+
 ## Data Cleaning
+Data cleaning was done using power-query. It involved the removal of irrelevant columns, replacement of missing values and setup of columns to their appropriate data-types.
 
-## Procedures
-This analysis was done using powerBI. Each question was answered using Data Analysis Expression (DAX).
-Firstly, a date table was created from the date received field. 
-my date table = CALENDAR(MIN('Grocery_Inventory new v1'[Date_Received]), MAX('Grocery_Inventory new v1'[Date_Received]))
-the table was then marked as a date table and merged on the data model view using a 1-to-* relationship.
-Secondly, DAX table was created and various dax measures added.
+## KPIs
+Average Sales Volume
+Total Number of Suppliers
+Max Date Recieved
+Total Stock Quantity
+Total Sales Volume
+my date table *CALENDAR(MIN('Grocery_Inventory new v1'[Date_Received]), MAX('Grocery_Inventory new v1'[Date_Received]))*
 
-## Questions and Findings
+## Research Questions
 1. What is the average stock quantity available per product category?
-   the average stock quantity was measured using
-   Avg Stock Quantity = AVERAGE('Grocery_Inventory new v1'[Stock_Quantity])
-<img width="875" height="485" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/b9e6e1d9-08af-4f49-acbb-c556b24d5773" />
+2. Which suppliers contribute the most to total product inventory?
+3. Which products have the longest shelf life before expiration, and how does that impact sales?
+4. Which products are most likely to run out of stock based on last reorder levels? 
+5. Can we predict seasonal demand for different product categories based on sales volume trends?
+6. What are the optimal reorder levels for high-demand products to prevent stockouts? 
 
-3. Which suppliers contribute the most to total product inventory?
-4. Which products have the longest shelf life before expiration, and how does that impact sales?
-5. Which products are most likely to run out of stock based on last reorder levels? 
-6. Can we predict seasonal demand for different product categories based on sales volume trends?
-7. What are the optimal reorder levels for high-demand products to prevent stockouts? 
+## Key Findings
+1. The average stock quantity ranges from 50.86 to 62.23 (Grains & Pulses - Seafood).
+   
+2. Katz, Twitterwire, Meevee, Quatz and Feedfire contributed the most to product inventory.
+   
+3. The products with the longest shelf-life are Garlic, Banana, Rice Flour.
 
- 
+4. The following products are most likely to run out of stock based on last reorder level.
+   Rice flour, coconut, raw sugar, evapourated milk amongst others.
+
+5. The seasonal demand for different product categories is expected to be between 528 and -259. This indicates that a drop in demand would reduce sales by 259. 
+
+6. The optimal reorder level is 50% of the current reorder level. 
+
+## Recommendations
+- Reorder quantity should be increased by 50% of the current reorder level.
+
+## Conclusion
