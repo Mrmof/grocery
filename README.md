@@ -1,5 +1,5 @@
 # Grocery - PowerBI
-Grocery inventory dataset
+
 ## Table of Content
 - [Introduction](#introduction)
 - [Project Objectives](#projects-objectives)
@@ -12,9 +12,14 @@ Grocery inventory dataset
 - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
  
+## Introduction
+This project described and evaluated the inventory of a grocery store.
+
+## Project Objectives
+This project is intended to provide insights into the inventory of a grocery store, as a means to influence future decision-making.
 
 ## Description
-This project described and evaluated the inventory of a grocery store. It was sourced from Kaggle.com. It comprises of 17 fields (columns) and 572 obeservations (rows). It consisted of 5 unanswered questions meant to give data insights for future decision making.
+ It was sourced from Kaggle.com. It comprises of 17 fields (columns) and 572 obeservations (rows). It consisted of 5 unanswered questions meant to give data insights for future decision making.
 ## Data Cleaning
 
 ## Procedures
